@@ -5,7 +5,7 @@ const pathUtil = require('path');
 
 
 module.exports = function(app) {
-  app.addEngine('art', require('plover-arttemplate'));
+  require('plover-arttemplate/lib/plugin')(app);
 
   const root = app.settings.applicationRoot;
   const plugin = require(pathUtil.join(root, '../../../lib/plugin.js'));
