@@ -1,3 +1,18 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/plover-modules/plover-assets/compare/v2.1.0...v2.2.0) (2016-07-13)
+
+
+### Bug Fixes
+
+* 修复plover[@2](https://github.com/2).5版本下资源输出顺序问题 ([d6245d4](https://github.com/plover-modules/plover-assets/commit/d6245d4))
+
+
+### Performance Improvements
+
+* 优化assign性能 ([47a6299](https://github.com/plover-modules/plover-assets/commit/47a6299))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/plover-modules/plover-assets/compare/v2.0.4...v2.1.0) (2016-06-15)
 
