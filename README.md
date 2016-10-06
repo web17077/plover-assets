@@ -11,8 +11,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/plover-assets.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/plover-assets
-[travis-image]: https://img.shields.io/travis/plover-modules/plover-assets/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/plover-modules/plover-assets
-[coveralls-image]: https://img.shields.io/codecov/c/github/plover-modules/plover-assets.svg?style=flat-square
-[coveralls-url]: https://codecov.io/github/plover-modules/plover-assets?branch=master
+[travis-image]: https://img.shields.io/travis/ploverjs/plover-assets/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/ploverjs/plover-assets
+[coveralls-image]: https://img.shields.io/codecov/c/github/ploverjs/plover-assets.svg?style=flat-square
+[coveralls-url]: https://codecov.io/github/ploverjs/plover-assets?branch=master
 
