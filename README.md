@@ -245,7 +245,7 @@ app.ploverAssetsHandler.add('css', '.less', PloverAssetsHandlerLess, order);
 
 **实例**
 
-[plover-assets-less](https://github.com/plover-modules/plover-assets-less/blob/master/lib/plugin.js)
+[plover-assets-less](https://github.com/ploverjs/plover-assets-less/blob/master/lib/plugin.js)
 
 ### filter
 尝试找到path对应的文件并编译，用在请求一定的url上。
