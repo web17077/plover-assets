@@ -9,3 +9,5 @@
 <img src={{assets.root}}img/logo.png alt="" />
 <img src={{assets.root}}img/big.png alt="" />
 <img src={{assets.url('lib:img/combo.png')}} alt="" />
+
+{{app.control('form#select')}}
