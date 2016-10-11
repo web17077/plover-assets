@@ -1,3 +1,13 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/ploverjs/plover-assets/compare/v2.3.0...v2.4.0) (2016-10-11)
+
+
+### Bug Fixes
+
+* 修复非本模块control中引入assets错误。 ([a4a4fbd](https://github.com/ploverjs/plover-assets/commit/a4a4fbd))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/ploverjs/plover-assets/compare/v2.1.0...v2.2.0) (2016-07-13)
 
