@@ -2,28 +2,32 @@
 
 
 const pathUtil = require('path');
-const http = require('http');
-const plover = require('plover');
-const request = require('supertest');
+const mm = require('plover-test-mate');
 
-const util = require('./util');
+const plugin = require('../lib/plugin');
 
 
 describe('helper', function() {
-  const root = pathUtil.join(__dirname, 'fixtures/app');
+  const appRoot = pathUtil.join(__dirname, 'fixtures/app');
+  const expectRoot = pathUtil.join(__dirname, 'fixtures/expect');
 
   it('use assets helper', function() {
-    const agent = createAgent({
-      applicationRoot: root,
+    const app = mm({
+      applicationRoot: appRoot,
+      expectRoot: expectRoot,
       port: 60001
     });
-    return agent.get('/list')
-        .expect(equal('list.html'));
+
+    app.use('plover-arttemplate');
+    app.use(plugin);
+
+    return app.test('/list', 'list.html');
   });
 
   it('assets tags with url concat', function() {
-    const agent = createAgent({
-      applicationRoot: root,
+    const app = mm({
+      applicationRoot: appRoot,
+      expectRoot: expectRoot,
       env: 'production',
       port: 60002,
       assets: {
@@ -34,20 +38,9 @@ describe('helper', function() {
       }
     });
 
-    return agent.get('/list')
-        .expect(equal('list-concat.html'));
+    app.use('plover-arttemplate');
+    app.use(plugin);
+
+    return app.test('/list', 'list-concat.html');
   });
 });
-
-
-function createAgent(settings) {
-  const app = plover(settings);
-  const server = http.createServer(app.callback());
-  server.listen(settings.port);
-  return request.agent(server);
-}
-
-
-function equal(path) {
-  return util.htmlEqual(util.fixture('app/expect/' + path));
-}
