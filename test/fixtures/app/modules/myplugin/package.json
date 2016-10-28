@@ -1,6 +1,0 @@
-{
-  "name": "myplugin",
-  "plover": {
-    "plugin": "index.js"
-  }
-}
