@@ -2,11 +2,11 @@
 
 
 const pathUtil = require('path');
-const scanDir = require('..').scanDir;
+const scanDir = require('../../lib/util/scan-dir');
 
 
-describe('plover-assets-util/lib/scanDir', function() {
-  const dir = pathUtil.join(__dirname, 'fixtures/app');
+describe('util/scan-dir', function() {
+  const dir = pathUtil.join(__dirname, '../fixtures/scan');
 
   const toRelative = path => pathUtil.relative(dir, path);
 
@@ -56,7 +56,7 @@ describe('plover-assets-util/lib/scanDir', function() {
 
   it('options.relative', function() {
     const options = {
-      ignore: ['app/package.json', 'app/dist/'],
+      ignore: ['scan/package.json', 'scan/dist/'],
       relative: pathUtil.dirname(dir)
     };
 
@@ -83,3 +83,4 @@ describe('plover-assets-util/lib/scanDir', function() {
     ]);
   });
 });
+
