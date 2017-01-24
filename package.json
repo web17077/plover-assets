@@ -12,7 +12,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -o CHANGELOG.md -s"
   },
   "bin": {
-    "build-plover-assets": "bin/build.js"
+    "plover-assets-build": "bin/build.js"
   },
   "files": [
     "bin",
