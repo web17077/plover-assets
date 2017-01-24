@@ -27,12 +27,6 @@ describe('middleware', function() {
   });
 
 
-  it('can direct acces assets under `/g`', function() {
-    return app.get('/g/index.html')
-        .expect('Hello World\n');
-  });
-
-
   it('should yield next if not an assets request', function() {
     return app.get('/hello').expect('ok');
   });
@@ -78,6 +72,11 @@ describe('middleware', function() {
 
       yield myapp.get(url).expect(expect);
     });
+  });
+
+
+  it('direct access /public file when run in no dev mode', function() {
+    return myapp.get('/g/index.html').expect('Hello World\n');
   });
 
 
