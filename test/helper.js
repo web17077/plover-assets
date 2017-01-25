@@ -15,7 +15,8 @@ describe('helper', function() {
     const app = mm({
       applicationRoot: appRoot,
       expectRoot: expectRoot,
-      port: 60001
+      port: 60001,
+      env: 'test'
     });
 
     app.use('plover-arttemplate');
