@@ -1,3 +1,18 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/ploverjs/plover-assets/compare/v2.4.0...v3.0.0) (2017-01-25)
+
+
+### Features
+
+* add manifest to assets ([4f2231b](https://github.com/ploverjs/plover-assets/commit/4f2231b))
+* combine plover-assets-vendor ([1bdf2cd](https://github.com/ploverjs/plover-assets/commit/1bdf2cd))
+* remove stamp ([375901a](https://github.com/ploverjs/plover-assets/commit/375901a))
+* 优化ploverAssetsVendors配置 ([ef37e0b](https://github.com/ploverjs/plover-assets/commit/ef37e0b))
+* 优化应用资源的url形式 ([5d4df0b](https://github.com/ploverjs/plover-assets/commit/5d4df0b))
+* 编译流程添加manifest文件生成。 ([637d18b](https://github.com/ploverjs/plover-assets/commit/637d18b))
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/ploverjs/plover-assets/compare/v2.3.0...v2.4.0) (2016-10-11)
 
